@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+  <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/poniyaag_bank</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.connection.password"></property>
+  <property name="hibernate.connection.pool_size">25</property>
+  <property name="show_sql">true</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <!-- Mapping files -->
+  
+  <mapping resource="vo/list_vehicles.hbm.xml"/>
+  <mapping resource="vo/caught_vehicles.hbm.xml"/>
+  <mapping resource="vo/chatvo.hbm.xml"/>
+  <mapping resource="vo/LoginVo.hbm.xml"/>
+  <mapping resource="vo/statusvo.hbm.xml"/>
+  <mapping resource="vo/attachmentVO.hbm.xml"/>
+  <mapping resource="vo/attachmentMappingVO.hbm.xml"/>
+  <mapping resource="vo/employeevo.hbm.xml"/>
+  <mapping resource="vo/BillList.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.list_vehicles" table="list_vehicles" >
+		<id name="reg_No" type="java.lang.String">
+			<column name="Reg_No" />
+		</id>
+		<property name="appl" type="java.lang.String">
+			<column name="Appl" />
+		</property>
+
+		<property name="apac" type="java.lang.String">
+			<column name="Apac" />
+		</property>
+		
+		<property name="party_Name" type="java.lang.String">
+			<column name="Party_Name" />
+		</property>
+		
+		<property name="no_of_EMI_OS" type="java.lang.String">
+			<column name="No_of_EMI_OS" />
+		</property>
+		
+		<property name="chasis_No" type="java.lang.String">
+			<column name="Chasis_No" />
+		</property>
+		
+		<property name="engine_No" type="java.lang.String">
+			<column name="Engine_No" />
+		</property>
+		
+		<property name="location" type="java.lang.String">
+			<column name="Location" />
+		</property>
+		
+		
+		<property name="asset_Catagory" type="java.lang.String">
+			<column name="Asset_Catagory" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

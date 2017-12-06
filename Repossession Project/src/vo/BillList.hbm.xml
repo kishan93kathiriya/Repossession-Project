@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.BillList" table="bill_list" >
+		
+		<id name="bill_No" type="int">
+			<generator class="increment" />
+		</id>
+
+		<property name="bill_Date" type="java.lang.String">
+			<column name="Bill_Date" />
+		</property>
+		
+		<property name="loan_No" type="java.lang.String">
+			<column name="Loan_No" />
+		</property>
+		
+		<property name="reg_No" type="java.lang.String">
+			<column name="Reg_No" />
+		</property>
+		
+		<property name="bill_Amount" type="int">
+			<column name="Bill_Amount" />
+		</property>
+		
+		<property name="finance" type="java.lang.String">
+			<column name="Finance" />
+		</property>
+	
+		<property name="status" type="java.lang.String">
+			<column name="status"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

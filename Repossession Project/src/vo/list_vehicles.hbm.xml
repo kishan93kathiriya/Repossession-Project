@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="vo.list_vehicles" table="list_vehicles" >
+		<id name="reg_No" type="java.lang.String">
+			<column name="Reg_No" />
+		</id>
+		<property name="loanNo" type="java.lang.String">
+			<column name="Loan_No" />
+		</property>
+
+		<property name="customerName" type="java.lang.String">
+			<column name="Customer_Name" />
+		</property>
+		
+		<property name="model" type="java.lang.String">
+			<column name="Model" />
+		</property>
+		
+		<property name="chasis_No" type="java.lang.String">
+			<column name="Chasis_No" />
+		</property>
+		
+		<property name="engine_No" type="java.lang.String">
+			<column name="Engine_No" />
+		</property>
+		
+	
+		
+		<property name="contact" type="java.lang.String">
+			<column name="Contact" />
+		</property>
+		
+		<property name="status" type="java.lang.String">
+			<column name="status" default="0"/>
+		</property>
+		
+		<property name="bank" type="java.lang.String">
+			<column name="bank" />
+		</property>
+		<property name="date" type="java.lang.String">
+			<column name="date" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

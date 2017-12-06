@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.AttachmentVO" table="lsc_attachment_mst" lazy="false">
+  
+   <id name="attachmentID" type="int" column="attachmentID" ><generator class="increment"/> </id>
+ 
+   
+   <property name="attachmentType"><column name="attachmentType" /></property>
+  
+  
+  <set name="attachset" table="lsc_attachment_mpg" cascade="delete" inverse="true" >
+            <key>
+                <column name="attachmentID"  />
+            </key>
+            
+            <one-to-many class="vo.AttachmentMappingVO" />
+        </set>
+   
+   
+ </class>
+</hibernate-mapping>

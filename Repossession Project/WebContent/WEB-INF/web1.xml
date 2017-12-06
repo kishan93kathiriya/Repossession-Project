@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CMSO</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>events.jsp</welcome-file>
+    <welcome-file>list_datasheet.jsp</welcome-file>
+    <welcome-file>add_agencics.jsp</welcome-file>
+    <welcome-file>itsme.jsp</welcome-file>
+    <welcome-file>event-details.jsp</welcome-file>
+    <welcome-file>list_busted.jsp</welcome-file>
+    <welcome-file>msg_admin.jsp</welcome-file>
+	
+    <welcome-file>msg_emp.jsp</welcome-file>
+    <welcome-file>list_datasheet1.jsp</welcome-file>
+	<welcome-file>form.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>controller.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  <description></description>
+  <display-name>Filter</display-name>
+  <filter-name>Filter</filter-name>
+  <filter-class>authentication.Filter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  <filter-name>Filter</filter-name>
+  <url-pattern>/*</url-pattern>
+  
+  </filter-mapping>
+</web-app>

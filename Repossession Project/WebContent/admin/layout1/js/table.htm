@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- jQuery 2.0.2 -->
+    <script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script type="application/javascript" src="tableExport.js"></script>
+    <script type="application/javascript" src="jquery.base64.js"></script>
+    <script type="application/javascript" src="jspdf/libs/sprintf.js"></script>
+    <script type="application/javascript" src="jspdf/jspdf.js"></script>
+    <script type="application/javascript" src="jspdf/libs/base64.js"></script>
+</head>
+<body>
+    <table id="nation">
+        <tbody>
+            <tr>
+                <td>
+                    中国
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#" onclick="$('#nation').tableExport({type:'pdf',escape:'false'});">PDF</a>
+</body>
+</html>

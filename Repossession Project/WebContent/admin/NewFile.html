@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="tableExport.js"></script>
+<script type="text/javascript" src="jquery.base64.js"></script>
+<script type="text/javascript" src="sprintf.js"></script>
+<script type="text/javascript" src="jspdf/jspdf.js"></script>
+<script type="text/javascript" src="base64.js"></script>
+<style>
+    #activity {
+        text-align:center;border:1px solid #ccc;
+    }
+    #activity td{
+        text-align:center;border:1px solid #ccc;
+    }
+     #footerExport td{
+       cursor:pointer;
+       text-align:center;border:1px solid #ccc;
+       border:none;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        
+        $('#pqr').bind('click', function (e) {
+            $('#activity').tableExport({ type: 'pdf', escape: 'false' });
+        });
+        $('#xyz').bind('click', function (e) {
+            $('#activity').tableExport({ type: 'csv', escape: 'false' });
+        });
+        
+    });
+</script>
+
+
+
+</head>
+<body>
+<a href="#" id="pqr" >PDFFFFF</a>
+<a href="#" id="xyz" >CSVVV</a>
+
+
+<table id="activity">
+<tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr><tr>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+<td>
+dslvnksnvkls
+</td>
+</tr>
+
+
+
+</table>
+</body>
+</html>
